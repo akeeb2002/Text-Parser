@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser info  Screen Page </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    h1{
+       padding-top: 20%; 
+       color: #935dd9;
+       text-align: center;
+    }
+    p, button, div{
+      cursor: pointer;
+      color: #935dd9;
+      text-align: center;
+    }
+ </style>
+<body >
+  <div class= "Browsers">
+    <h1>GeoLocation Infomation! </h2>
+      <p id ="geolocation"> </p>
+      <button onclick="getLocation()">Get Location</button>
+<script>
+
+
+function getLocation() {
+    navigator.geolocation.getCurrentPosition(showLoc);
+}
+
+function showLoc(pos) {
+    document.getElementById("geolocation").innerHTML =
+        "Latitude: " +
+        pos.coords.latitude +
+        "<br>Longitude: " +
+        pos.coords.longitude;
+}
+</script>
+    </div>
+  </body>
+  </html>

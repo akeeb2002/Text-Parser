@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Developer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      h1{
+         padding-top: 20%; 
+         color: #935dd9;
+         text-align: center;
+      }
+      p{
+         color: #935dd9;
+         text-align: center;
+      }
+   </style>
+</head>
+<body>
+    <div class="Browsers">
+    <h1>Locations</h1>
+        <p id="Href"></p>
+        <p id="Hostname"></p>
+        <p id="Pathname"></p>
+        <p id="Protocol"></p>
+        <script>
+             document.getElementById("Href").innerHTML =
+                "The location page is: " + window.location.href;
+           
+            document.getElementById("Hostname").innerHTML =
+                "The hostname of page is: " + window.location.hostname;
+           
+            document.getElementById("Pathname").innerHTML =
+                "The path of page is: " + window.location.pathname;
+            
+            document.getElementById("Protocol").innerHTML =
+                "The protocol is: " + window.location.protocol;
+        </script>
+    </div>
+</body>
+</html>

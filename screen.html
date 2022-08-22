@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser info  Screen Page </title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <style>
+    h2{
+       padding-top: 20%; 
+       color: #935dd9;
+       text-align: center;
+    }
+    p{
+       color: #935dd9;
+       text-align: center;
+    }
+ </style>
+  <body >
+    <div class= "Browsers">
+        <h2>Window Screen Information </h2>
+
+        <p id="Screenwidth"></p>
+        <p id="Screenheight"></p>
+        <p id="availableWidth"></p>
+        <p id="availableHeight"></p>
+        <p id="colorDepth"></p>
+        <p id="pixelDepth"></p>
+        
+        <script>
+            document.getElementById("Screenwidth").innerHTML =
+                "Screen Width: " + screen.width;
+            
+            document.getElementById("Screenheight").innerHTML =
+                "Screen Height: " + screen.height;
+          
+            document.getElementById("availableWidth").innerHTML =
+                "Available Screen Width: " + screen.availWidth;
+            
+            document.getElementById("availableHeight").innerHTML =
+                "Available Screen Height: " + screen.availHeight;
+           
+            document.getElementById("colorDepth").innerHTML =
+                "Color Depth of Screen: " + screen.colorDepth;
+           
+            document.getElementById("pixelDepth").innerHTML =
+                "Pixel Depth of Screen: " + screen.pixelDepth;
+        
+    
+    </script>
+  </div>
+  </body>
+  </html>
+  

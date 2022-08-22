@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser info  window page </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    h2{
+       padding-top: 20%; 
+       color: #040202;
+       text-align: center;
+    }
+    p{
+       color: #935dd9;
+       text-align: center;
+    }
+ </style>
+</head>
+
+<body class = "course">
+<div class = "Browsers">
+
+  <h2>Window Navigator </h2>
+
+  <p id="Windows"></p>
+  <p id="Height"></p>
+  
+  <script>
+    document.getElementById("Windows").innerHTML =
+      "Browser  Window Width: " + window.innerWidth;
+  
+  document.getElementById("Height").innerHTML =
+    " Browser Window Height: " + window.innerHeight;
+    
+  </script>
+  
+  </body>
+  </html>
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+   h1{
+      padding-top: 20%; 
+      color: #935dd9;
+      text-align: center;
+   }
+   p{
+      color: #935dd9;
+      text-align: center;
+   }
+   .textbox{
+      height: 25px;
+      width: 500px;
+   }
+   .submitbutton{
+      border: none;
+      cursor: pointer;
+      color: rgb(232, 232, 232);
+      background-color: #8039dd;
+      height: 25px;
+      width: 80px;
+      font-weight: bold;
+   }
+</style>
+</head>
+   <body>
+<p></p>
+   <h1>Parsing Web Service</h1>
+      <form action="parse.php" method="post">
+         <p>Source Name</p><p><input type="text" name="source_name" required/></p>
+         <p>Source URL</p><p><input type="text" class="textbox" name="source_url" required/></p>
+         <p>Source Begin</p><p><input type="text" name="source_begin"/></p>
+         <p>Source End</p><p><input type="text" name="source_end"/></p>
+         <p><input type="submit" class="submitbutton" value="Parse" /></p>
+      </form>
+   </body>
+</html>
