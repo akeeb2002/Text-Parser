@@ -1,8 +1,5 @@
 # Text-Parser
 
-Website Link: [https://venus.cs.qc.cuny.edu/~khak0961/cs355/]
-
-
 • Web-Based Parser of literary texts that also reports on the word frequencies of the texts being parsed.
 
 • HTML/CSS were used for the front end of the website.
